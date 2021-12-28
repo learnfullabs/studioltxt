@@ -1,0 +1,39 @@
+.node-form .entities-list:not(.entities-list--single-item) {
+  display: table-row-group;
+  grid-template-columns: unset;
+}
+
+.node-form .entities-list .item-container {
+  width: 100%;
+}
+
+/**
+ * Entity Browser Table
+*/
+.table--widget-entity_reference_browser_table_widget .entities-list .item-container .field__item:hover,
+.table--widget-entity_reference_browser_table_widget .entities-list .item-container .field__item:focus {
+  border-color: transparent !important;
+}
+.entities-list.sortable .item-container:hover,
+.entities-list.sortable .item-container:focus {
+  opacity: 1;
+}
+
+/**
+ * Entity Browser
+*/
+.view-ebrowser-resources .views-exposed-form__item.views-exposed-form__item {
+  margin: 0 1em 1em 0;
+}
+.view-ebrowser-resources .claro-autocomplete {
+  width: unset;
+}
+.view-ebrowser-resources .form-item--items-per-page {
+  align-self: baseline;
+}
+.view-ebrowser-resources .form-actions {
+  align-self: center;
+}
+.view-ebrowser-resources .form-actions .button {
+  margin-top: 0;
+}

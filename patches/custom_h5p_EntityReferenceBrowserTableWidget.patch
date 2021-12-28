@@ -1,0 +1,36 @@
+diff --git a/src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php b/src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php
+index fdde452..dd58acf 100644
+--- a/src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php
++++ b/src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php
+@@ -18,6 +18,7 @@ use Drupal\Core\Url;
+ use Drupal\entity_browser\FieldWidgetDisplayInterface;
+ use Drupal\entity_browser\FieldWidgetDisplayManager;
+ use Drupal\entity_browser\Plugin\Field\FieldWidget\EntityReferenceBrowserWidget;
++use Drupal\h5p\Entity\H5PContent;
+ use Drupal\taxonomy\Entity\Term;
+ use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+@@ -196,7 +197,22 @@ class EntityReferenceBrowserTableWidget extends EntityReferenceBrowserWidget {
+ 
+       $row['handle'] = $this->buildSortableHandle();
+       foreach ($this->getColumns($entity) as $field_name => $field) {
+-        $row[$field_name] = $field;
++        if ($entity->hasField('field_h5p')) {
++          $h5p = H5PContent::load($entity->get('field_h5p')->getString());
++          $h5pLibrary = $h5p->getLibrary(TRUE);
++          $display_options = ['label' => 'hidden'];
++
++          $row['h5p title'] = $h5p->get('title')->view($display_options);
++          $fullLicenseString = \Drupal::service('h5peb.entity_browser_table_fields')
++            ->getFullLicenseString($h5p->get('license')->getString());
++          $row['license'] = \Drupal::service('h5peb.entity_browser_table_fields')
++            ->stringToH5PRenderArray($fullLicenseString);
++          $row['library'] = \Drupal::service('h5peb.entity_browser_table_fields')
++            ->stringToH5PRenderArray($h5pLibrary['name']);
++        }
++        else {
++          $row[$field_name] = $field;
++        }
+       }
+       $rowData[] = array_filter(array_merge($row, [
+         'actions' => [
