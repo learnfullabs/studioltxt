@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "593c0b16d1c7b8f6e0ec1a15fa3dd588",
+    "content-hash": "26f3444a1e162e8330f8576599241525",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -7113,6 +7113,34 @@
             "time": "2017-05-10T09:20:27+00:00"
         },
         {
+            "name": "learnfullabs/h5peb",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/learnfullabs/h5peb.git",
+                "reference": "3335dda51823a0c18435627976031afcbdbfad51"
+            },
+            "default-branch": true,
+            "type": "drupal-custom-module",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yasin Dahi (ymdahi)",
+                    "homepage": "https://github.com/ymdahi",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Integration for H5P and Entity Browser",
+            "homepage": "https://github.com/learnfullabs/h5peb",
+            "support": {
+                "issues": "https://github.com/learnfullabs/h5peb",
+                "source": "https://github.com/learnfullabs/h5peb"
+            },
+            "time": "2021-12-28T20:22:18+00:00"
+        },
+        {
             "name": "mailgun/mailgun-php",
             "version": "3.5.0",
             "source": {
@@ -11497,7 +11525,8 @@
         "drupal/menu_token": 15,
         "drupal/private_content": 5,
         "drupal/realname": 5,
-        "drupal/views_field_view": 10
+        "drupal/views_field_view": 10,
+        "learnfullabs/h5peb": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

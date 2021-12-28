@@ -12,6 +12,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/learnfullabs/h5peb.git"
         }
     ],
     "require": {
@@ -58,7 +62,8 @@
         "drupal/views_conditional": "^1.2",
         "drupal/views_field_view": "^1.0@beta",
         "drupal/views_filters_populate": "^1.1",
-        "drush/drush": "^10.3"
+        "drush/drush": "^10.3",
+        "learnfullabs/h5peb": "dev-master"
     },
     "conflict": {
         "drupal/drupal": "*"
