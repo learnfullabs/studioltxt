@@ -1,0 +1,23 @@
+/**
+ * H5P info block (on node page)
+**/
+.views-field.adaptid-field {
+  code {
+    width: 100%;
+    display: block;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    padding: 0.5em;
+    color: $body-color;
+  }
+  #copy-adaptid {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: small;
+  }
+  #copy-adaptid:hover,
+  #copy-adaptid:focus {
+    cursor: pointer;
+  }
+}

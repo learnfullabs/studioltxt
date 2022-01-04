@@ -72,6 +72,22 @@ import 'simplebar/dist/simplebar.css';
     }
   };
 
+  Drupal.behaviors.copyButtons = {
+    attach: function(context) {
+
+      $("#copy-adaptid").on("click", function(){
+        var button = $(this)
+        var adaptid = button.siblings("p");
+        navigator.clipboard.writeText(adaptid.text());
+        button.text("Copied!");
+    
+        setTimeout(function() {
+          button.text("Copy")
+        }, 3000);
+      });
+    }
+  };
+
   Drupal.exposedFilters = {
     remove_tid: function () {
       var field_autocomplete = jQuery('body').find('.form-autocomplete');
