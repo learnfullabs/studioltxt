@@ -53,7 +53,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/private_content": "^2.0@RC",
         "drupal/radix": "4.10",
-        "drupal/radix_layouts": "^4.1",
+        "drupal/radix_layouts": "^5",
         "drupal/realname": "^2",
         "drupal/regcode_simple": "^1.4",
         "drupal/taxonomy_manager": "^2.0",

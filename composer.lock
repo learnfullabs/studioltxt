@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3fed6a5a77095d92036a0eda273df86",
+    "content-hash": "c4fea6b8a891c9fd7da3c84527e51308",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5374,29 +5374,29 @@
         },
         {
             "name": "drupal/radix_layouts",
-            "version": "4.1.0",
+            "version": "5.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/radix_layouts.git",
-                "reference": "8.x-4.1"
+                "reference": "8.x-5.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/radix_layouts-8.x-4.1.zip",
-                "reference": "8.x-4.1",
-                "shasum": "c5aa0e5a72e13c2f163cc4a18d0816cb11018357"
+                "url": "https://ftp.drupal.org/files/projects/radix_layouts-8.x-5.0-rc1.zip",
+                "reference": "8.x-5.0-rc1",
+                "shasum": "3e719c9ddfce08505fa00bb5c7cc464a62b179b0"
             },
             "require": {
-                "drupal/core": "^8"
+                "drupal/core": "^8 || ^9"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.1",
-                    "datestamp": "1551641284",
+                    "version": "8.x-5.0-rc1",
+                    "datestamp": "1643662075",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -5406,15 +5406,15 @@
             ],
             "authors": [
                 {
-                    "name": "arshadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
                     "name": "dsnopek",
                     "homepage": "https://www.drupal.org/user/266527"
+                },
+                {
+                    "name": "shadcn",
+                    "homepage": "https://www.drupal.org/user/571032"
                 }
             ],
-            "description": "Responsive layouts built on the Bootstrap 3 grid system.",
+            "description": "Responsive layouts built on the Bootstrap 5 grid system.",
             "homepage": "https://www.drupal.org/project/radix_layouts",
             "support": {
                 "source": "https://git.drupalcode.org/project/radix_layouts"
