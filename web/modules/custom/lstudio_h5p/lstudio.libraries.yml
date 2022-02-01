@@ -2,3 +2,4 @@ global:
   version: 1.0
   js:
     lstudio-h5p.js: {}
+    lstudio-h5p-mode.js: {}

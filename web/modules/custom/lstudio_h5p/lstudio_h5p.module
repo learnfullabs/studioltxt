@@ -80,6 +80,13 @@ function lstudio_h5p_h5p_styles_alter(&$styles, &$libraries, $mode) {
 }
 
 function lstudio_h5p_h5p_scripts_alter(&$scripts, & $libraries, $mode) {
+
+  if ($mode == 'external') {
+    $scripts[] = (object) array(
+      'path' => drupal_get_path('module', 'lstudio_h5p') . '/lstudio-h5p-mode.js',
+      'version' => '?ver=1',
+    );
+  }
   // Add special styles for all H5P Content
   $scripts[] = (object) array(
     'path' => drupal_get_path('module', 'lstudio_h5p') . '/lstudio-h5p.js',
