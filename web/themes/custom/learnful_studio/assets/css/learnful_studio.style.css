@@ -9780,6 +9780,10 @@ span[data-h5p-type="Drag and Drop"] {
   background-image: url("../icons/h5p/DragQuestion.svg");
 }
 
+span[data-h5p-type="Drag the Words"] {
+  background-image: url("../icons/h5p/DragText.svg");
+}
+
 span[data-h5p-type="Drag Text"] {
   background-image: url("../icons/h5p/DragText.svg");
 }
@@ -9792,6 +9796,10 @@ span[data-h5p-type="Find The Words"] {
   background-image: url("../icons/h5p/FindTheWords.svg");
 }
 
+span[data-h5p-type="Find the Hotspot"] {
+  background-image: url("../icons/h5p/ImageHotspots.svg");
+}
+
 span[data-h5p-type=Flashcards] {
   background-image: url("../icons/h5p/Flashcards.svg");
 }
@@ -9800,8 +9808,12 @@ span[data-h5p-type="Guess The Answer"] {
   background-image: url("../icons/h5p/GuessTheAnswer.svg");
 }
 
-span[data-h5p-type="iFrame Embed"] {
+span[data-h5p-type="Iframe Embedder"] {
   background-image: url("../icons/h5p/IFrameEmbed.svg");
+}
+
+span[data-h5p-type="Image Choice"] {
+  background-image: url("../icons/h5p/MultiMediaChoice.svg");
 }
 
 span[data-h5p-type="Image Hotspot Question"] {
@@ -9810,6 +9822,10 @@ span[data-h5p-type="Image Hotspot Question"] {
 
 span[data-h5p-type="Image Hotspots"] {
   background-image: url("../icons/h5p/ImageHotspots.svg");
+}
+
+span[data-h5p-type="Image Juxtaposition"] {
+  background-image: url("../icons/h5p/ImageJuxtaposition.svg");
 }
 
 span[data-h5p-type="Image Pair"] {
@@ -9858,6 +9874,10 @@ span[data-h5p-type="Question Set"] {
 
 span[data-h5p-type="Single Choice Set"] {
   background-image: url("../icons/h5p/QuestionSet.svg");
+}
+
+span[data-h5p-type="Sort the Paragraphs"] {
+  background-image: url("../icons/h5p/SpeakTheWordsSet.svg");
 }
 
 span[data-h5p-type="Speak The Words"] {
