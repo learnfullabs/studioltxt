@@ -13,6 +13,38 @@ import 'simplebar/dist/simplebar.css';
     }
   };
 
+  Drupal.behaviors.flags = {
+    attach: function (context) {
+      $('.flag-bookmark.action-unflag').hover(
+        function(){
+          // $('a', this).removeClass('btn-light');
+          // $('a', this).addClass('btn-danger');
+          $('a > .material-icons', this).text('bookmark_remove');
+        }, function() {
+          // $('a', this).removeClass('btn-danger');
+          // $('a', this).addClass('btn-light');
+          $('a > .material-icons', this).text('bookmark_added');
+        }
+      );
+      // $('body.node .flag-bookmark').ready(function(){
+      //   e.stopPropagation();
+      //   $('body.node .flag-bookmark.action-flag').append("<span>Add to bookmarks</span>");
+      //   $('body.node .flag-bookmark.action-unflag').append("<span>Remove from bookmarks</span>");
+      // });
+
+      // $('body.node .flag-bookmark.action-flag').one(function(){
+      //   $('body.node .flag-bookmark.action-flag').append("<span>Add to bookmarks</span>");
+      //   $('body.node .flag-bookmark.action-unflag').append("<span>Remove from bookmarks</span>");
+      // });
+      
+      $('.item-actions > .flag').each(function(){
+        $('span.ftxt', this).css('display','none');
+      })
+
+      
+    }
+  };
+
   Drupal.behaviors.contactForms = {
     attach: function (context) {
       $('a.use-ajax.contact-form').attr('data-dialog-type', 'bootstrap4_modal');      

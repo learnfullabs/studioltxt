@@ -9704,6 +9704,10 @@ span[data-h5p-type] {
   background-repeat: no-repeat;
 }
 
+span[data-h5p-type=collection] {
+  background-image: url("../icons/collections_icon.svg");
+}
+
 span[data-h5p-type=Accordion] {
   background-image: url("../icons/h5p/Accordion.svg");
 }
@@ -9886,6 +9890,29 @@ span[data-h5p-type="Twitter User Feed"] {
 
 .list-view h3.item-title {
   font-size: 1.25em;
+}
+
+.flag-bookmark.action-unflag > a {
+  color: #28a745;
+}
+
+.flag-bookmark.action-unflag > a:hover,
+.flag-bookmark.action-unflag > a:focus {
+  color: #dc3545;
+}
+
+.flag-bookmark.action-flag > a:hover,
+.flag-bookmark.action-flag > a:focus {
+  color: #007bff;
+}
+
+body.node .flag-bookmark {
+  margin-top: 1em;
+  padding-top: 1em;
+  border-top: 1px solid #dee2e6;
+}
+body.node .flag-bookmark > a {
+  display: inline-flex;
 }
 
 .views-exposed-form.block form > .form-item {
