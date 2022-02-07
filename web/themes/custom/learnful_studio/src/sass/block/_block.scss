@@ -21,3 +21,19 @@
     cursor: pointer;
   }
 }
+
+
+/**
+ * H5P Resources in Collection Page
+**/
+
+.collection-resources-block {
+  .item-list {
+    > h3 {
+      font-size: $h5-font-size;
+      color: $text-muted;
+      margin-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+  }
+}
