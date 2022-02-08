@@ -8256,6 +8256,26 @@ __webpack_require__.r(__webpack_exports__);
       });
     }
   };
+  Drupal.behaviors.h5pElements = {
+    attach: function attach(context) {
+      $(document).ready(function () {
+        // Using setTimeout to run after other ready callbacks
+        setTimeout(function () {
+          // Listen for event triggered when changing "panels" in the accordion.
+          $('#drupal-bootstrap4-modal').on('shown.bs.modal', function (event) {
+            // Make sure the panel has automatic height
+            // ui.newPanel.css('height', 'auto');
+            // console.log(event);
+            // console.log(this);
+            // Triggering a resize event on the window will make H5Ps resize.
+            // H5P.jQuery(window).trigger('resize');
+            window.dispatchEvent(new Event('resize'));
+            H5P.init();
+          });
+        }, 0);
+      });
+    }
+  };
   Drupal.behaviors.contactForms = {
     attach: function attach(context) {
       $('a.use-ajax.contact-form').attr('data-dialog-type', 'bootstrap4_modal');

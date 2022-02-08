@@ -9712,6 +9712,10 @@ span[data-h5p-type=Accordion] {
   background-image: url("../icons/h5p/Accordion.svg");
 }
 
+span[data-h5p-type="Advanced fill the blanks"] {
+  background-image: url("../icons/h5p/AdvancedBlanks.svg");
+}
+
 span[data-h5p-type="Advent Calendar"] {
   background-image: url("../icons/h5p/AdventCalendar.svg");
 }

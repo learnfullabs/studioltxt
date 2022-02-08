@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7501917e31a65c81c04847cde67968f3",
+    "content-hash": "6d43193572eb8ccf157586a08c1fe2c5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5739,6 +5739,90 @@
             }
         },
         {
+            "name": "drupal/tagclouds",
+            "version": "2.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tagclouds.git",
+                "reference": "2.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tagclouds-2.0.0.zip",
+                "reference": "2.0.0",
+                "shasum": "f3896c5a9f49898088ba7cc99e860ff945a927c2"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.0",
+                    "datestamp": "1599658831",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Andriy Parkhomiuk",
+                    "homepage": "https://www.drupal.org/user/2565426"
+                },
+                {
+                    "name": "MGParisi",
+                    "homepage": "https://www.drupal.org/user/243021"
+                },
+                {
+                    "name": "NitinSP",
+                    "homepage": "https://www.drupal.org/user/2198938"
+                },
+                {
+                    "name": "amourow",
+                    "homepage": "https://www.drupal.org/user/281473"
+                },
+                {
+                    "name": "andrey.troeglazov",
+                    "homepage": "https://www.drupal.org/user/3145389"
+                },
+                {
+                    "name": "joseph.olstad",
+                    "homepage": "https://www.drupal.org/user/1321830"
+                },
+                {
+                    "name": "martin107",
+                    "homepage": "https://www.drupal.org/user/2659379"
+                },
+                {
+                    "name": "mxr576",
+                    "homepage": "https://www.drupal.org/user/315522"
+                },
+                {
+                    "name": "nikolas.tatianenko",
+                    "homepage": "https://www.drupal.org/user/1579942"
+                },
+                {
+                    "name": "oriol_e9g",
+                    "homepage": "https://www.drupal.org/user/66422"
+                },
+                {
+                    "name": "scito",
+                    "homepage": "https://www.drupal.org/user/1094714"
+                }
+            ],
+            "description": "TagClouds makes weighted tag clouds from your taxonomy terms.",
+            "homepage": "https://www.drupal.org/project/tagclouds",
+            "support": {
+                "source": "https://git.drupalcode.org/project/tagclouds"
+            }
+        },
+        {
             "name": "drupal/taxonomy_manager",
             "version": "2.0.6",
             "source": {
@@ -5961,6 +6045,60 @@
             "homepage": "http://drupal.org/project/upgrade_status",
             "support": {
                 "source": "https://git.drupalcode.org/project/upgrade_status"
+            }
+        },
+        {
+            "name": "drupal/view_mode_page",
+            "version": "4.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/view_mode_page.git",
+                "reference": "4.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/view_mode_page-4.0.1.zip",
+                "reference": "4.0.1",
+                "shasum": "42e745be85e28c0f236a8b2d000324d6afb08500"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/ctools": "*",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "4.0.1",
+                    "datestamp": "1609683108",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "VladimirAus",
+                    "homepage": "https://www.drupal.org/user/673120"
+                },
+                {
+                    "name": "davy-r",
+                    "homepage": "https://www.drupal.org/user/3278771"
+                },
+                {
+                    "name": "rballou",
+                    "homepage": "https://www.drupal.org/user/1840982"
+                }
+            ],
+            "description": "Makes it possible to create (additional) paths where entities will be shown in a given view_mode",
+            "homepage": "https://www.drupal.org/project/view_mode_page",
+            "support": {
+                "source": "https://git.drupalcode.org/project/view_mode_page"
             }
         },
         {
