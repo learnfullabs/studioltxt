@@ -83,8 +83,7 @@
     "extra": {
         "patches": {
             "drupal/h5p": {
-                "#3114732": "https://www.drupal.org/files/issues/2020-02-20/3114732-library-name-in-views.patch",
-                "newlicense": "patches/h5p_new_license.patch"
+                "#3114732": "https://www.drupal.org/files/issues/2020-02-20/3114732-library-name-in-views.patch"
             },
             "drupal/radix": {
                 "#3067615": "https://www.drupal.org/files/issues/2019-10-23/use-global-jquery-3067615-5.patch"
@@ -136,7 +135,7 @@
             ],
             "post-create-project-cmd-message": [
                 "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
+                "<bg=blue;fg=white>  Congratulations, you've installed the Drupal codebase  </>",
                 "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
                 "<bg=blue;fg=white>                                                         </>",
                 "",
