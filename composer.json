@@ -96,7 +96,8 @@
             },
             "drupal/entity_browser_table": {
                 "#3118941": "https://www.drupal.org/files/issues/2020-09-02/entity_browser_table-3118941-4.patch",
-                "#3153619": "https://www.drupal.org/files/issues/2020-07-31/3153619-entity-browser-table-custom.patch",
+                "#3166733": "https://www.drupal.org/files/issues/2020-08-25/fix-sort-loss-and-add-form-3166733-2.patch",
+                "#3222275": "https://www.drupal.org/files/issues/2021-07-06/store_or_save_reorder_data-3222275-3.patch",
                 "custom_h5p_EntityReferenceBrowserTableWidget": "patches/custom_h5p_EntityReferenceBrowserTableWidget.patch"
             },
             "drupal/bootstrap4_modal": {
