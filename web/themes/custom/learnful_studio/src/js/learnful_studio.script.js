@@ -2,11 +2,24 @@
 // import 'bootstrap';
 import 'simplebar';
 import 'simplebar/dist/simplebar.css';
+import Axios from 'axios';
 
 (function ($, Drupal) {
 
   'use strict';
 
+  Drupal.behaviors.fetchLicense = {
+    attach: function (context) {
+
+      let resourceToFetch = 'http://studio.v2/api/h5p/2256';
+
+      Axios.get(resourceToFetch)
+        .then(response => {
+          console.log(response.data);
+        })
+        .catch(error => console.error(error));
+    }
+  };
   Drupal.behaviors.enableToolTips = {
     attach: function (context) {
       $('[data-toggle="tooltip"]').tooltip();

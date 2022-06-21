@@ -1345,7 +1345,7 @@
     "postcss" "^7.0.32"
     "postcss-value-parser" "^4.1.0"
 
-"axios@0.19.0":
+"axios@^0.19.0", "axios@0.19.0":
   "integrity" "sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ=="
   "resolved" "https://registry.npmjs.org/axios/-/axios-0.19.0.tgz"
   "version" "0.19.0"
