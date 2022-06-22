@@ -1,4 +1,7 @@
 .block--learnful-studio-page-title h1 {
   font-size: 2rem;
   font-weight: bold;
+  border-bottom: $border-width solid $border-color;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
 }
