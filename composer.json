@@ -64,6 +64,7 @@
         "drupal/radix_layouts": "^5",
         "drupal/realname": "^2",
         "drupal/regcode_simple": "^1.4",
+        "drupal/restui": "^1.20",
         "drupal/tagclouds": "^2.0",
         "drupal/taxonomy_manager": "^2.0",
         "drupal/token": "^1.9",

@@ -11,13 +11,26 @@ import Axios from 'axios';
   Drupal.behaviors.fetchLicense = {
     attach: function (context) {
 
-      let resourceToFetch = 'http://studio.v2/api/h5p/2256';
+      // var iframes = document.querySelectorAll('.h5p-iframe');
+      // if (iframes) {
+      //   var i = iframes[0].contentWindow.H5P.instances[0];
+      //   var ms = i.getMaxScore();
+      //   console.log(ms);
+      // }
+      
+      // if (iframes.length !== 0) {
+      //   var instance = iframes[0].contentWindow.H5P.instances[0];
+      //   var maxScore = instance.getMaxScore ? instance.getMaxScore() : 0;
+      //   console.log("this max: " + maxScore);
+      // }
 
-      Axios.get(resourceToFetch)
-        .then(response => {
-          console.log(response.data);
-        })
-        .catch(error => console.error(error));
+      // let resourceToFetch = 'http://studio.v2/api/h5p/2256';
+
+      // Axios.get(resourceToFetch)
+      //   .then(response => {
+      //     console.log(response.data);
+      //   })
+      //   .catch(error => console.error(error));
     }
   };
   Drupal.behaviors.enableToolTips = {
